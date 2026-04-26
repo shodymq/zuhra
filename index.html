@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zuhra Cakes - Қызылордадағы табиғи өнімдерден жасалатын торттар, панкейктер және тәттілер."
+    />
+    <title>Zuhra Cakes | Виртуалды тәтті витрина</title>
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="header" id="top">
+        <a class="brand" href="#top" aria-label="Zuhra Cakes басты бет">
+          <img src="./logo/466951488_465452966084623_3726361205865754691_n.jpg" alt="Zuhra Cakes logo" />
+          <span>Zuhra Cakes</span>
+        </a>
+
+        <nav class="nav" aria-label="Негізгі навигация">
+          <a href="#top">Басты бет</a>
+          <a href="#menu">Мәзір</a>
+          <a href="#builder">Торт конструкторы</a>
+          <a href="#locations">Мекенжайлар</a>
+          <a href="#reviews">Пікірлер</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="cart-pill" type="button" data-open-cart>
+            <span class="cart-icon" aria-hidden="true">🧺</span>
+            <span>Тапсырыс</span>
+            <strong data-cart-count>0</strong>
+          </button>
+          <button class="menu-toggle" type="button" aria-label="Мәзірді ашу" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-media">
+            <img src="./cake%20photos/fistashka.jpg" alt="Фисташкалы жапондық панкейк" />
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="sweet-float strawberry" data-parallax="0.16">🍓</div>
+          <div class="sweet-float mint" data-parallax="-0.1">🌿</div>
+          <div class="sweet-float chocolate" data-parallax="0.11">🍫</div>
+          <div class="cream-dot dot-one" data-parallax="-0.08"></div>
+          <div class="cream-dot dot-two" data-parallax="0.13"></div>
+
+          <div class="hero-content reveal">
+            <img class="hero-logo" src="./logo/466951488_465452966084623_3726361205865754691_n.jpg" alt="Zuhra Cakes" />
+            <p class="eyebrow">Қызылорда · табиғи өнімдер</p>
+            <h1 id="hero-title">Жеуге болатын өнер</h1>
+            <p>
+              Табиғи өнімдерден жасалған торттар, панкейктер және тәттілер.
+              Қызылорда қаласында тапсырыс қабылдаймыз.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary pulse-cream" href="#builder">Торт құрастыру</a>
+              <a class="btn btn-ghost" href="#menu">Мәзірді көру</a>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <span>Бүгінгі витрина</span>
+            <strong>Жапондық панкейк</strong>
+            <small>1 құймақтан 1390 тг · 2 құймақтан 1990 тг</small>
+          </div>
+        </section>
+
+        <section class="section hits-section reveal" aria-labelledby="hits-title">
+          <div class="section-head">
+            <p class="eyebrow">Таңдаулы</p>
+            <h2 id="hits-title">Біздің хиттер</h2>
+            <button class="text-button" type="button" data-open-cart>Тапсырысты көрсету</button>
+          </div>
+          <div class="hits-track" id="hitsTrack" aria-label="Таңдаулы өнімдер"></div>
+        </section>
+
+        <section class="section menu-section reveal" id="menu" aria-labelledby="menu-title">
+          <div class="section-head">
+            <p class="eyebrow">Виртуалды тәтті витрина</p>
+            <h2 id="menu-title">Мәзір</h2>
+            <p>Торттар, панкейктер, пирогтар және дастарханға арналған тәтті таңдаулар.</p>
+          </div>
+          <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Санаттар"></div>
+          <div class="products-grid" id="productsGrid"></div>
+        </section>
+
+        <section class="section builder-section reveal" id="builder" aria-labelledby="builder-title">
+          <div class="section-head centered">
+            <p class="eyebrow">Торт конструкторы</p>
+            <h2 id="builder-title">Өзіңізге сай тортты құрастырыңыз</h2>
+          </div>
+          <div class="builder-layout">
+            <div class="builder-panel">
+              <div class="builder-progress">
+                <span data-builder-step-label>1 / 4</span>
+                <div><i data-builder-progress></i></div>
+              </div>
+              <h3 data-builder-question></h3>
+              <div class="builder-options" data-builder-options></div>
+              <div class="builder-controls">
+                <button class="btn btn-soft" type="button" data-builder-prev>Артқа</button>
+                <button class="btn btn-primary" type="button" data-builder-next>Келесі</button>
+              </div>
+            </div>
+            <div class="builder-result" data-builder-result>
+              <span>Сіздің тортыңыз дайындалуға жақын!</span>
+              <div data-builder-summary></div>
+              <button class="btn btn-primary" type="button" data-builder-whatsapp>
+                Дизайнды WhatsApp-та талқылау
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section fillings-section reveal" id="fillings" aria-labelledby="fillings-title">
+          <div class="section-head">
+            <p class="eyebrow">Дәмдер</p>
+            <h2 id="fillings-title">Дәмдер интерактивті галереясы</h2>
+            <p>Сүйікті дәміңізді таңдағанда витрина түсі де жұмсақ өзгереді.</p>
+          </div>
+          <div class="fillings-stage" id="fillingsStage">
+            <div class="fillings-list" id="fillingsList"></div>
+            <div class="filling-copy">
+              <span data-filling-name>Қызыл бархат</span>
+              <p data-filling-description>Жұмсақ бисквит, нәзік крем және мерекелік қызғылт реңк.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section locations-section reveal" id="locations" aria-labelledby="locations-title">
+          <div class="section-head">
+            <p class="eyebrow">Қызылорда</p>
+            <h2 id="locations-title">Бізді қайдан табасыз?</h2>
+          </div>
+          <div class="locations-layout">
+            <div class="location-cards" id="locationCards"></div>
+            <div class="map-card">
+              <iframe
+                title="Zuhra Cakes картасы"
+                data-map-frame
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="map-note">
+                <strong data-location-title>Панфилова көшесі 26</strong>
+                <span>Осы филиалдан алып кетуге болады</span>
+                <a data-map-link target="_blank" rel="noreferrer">Картадан ашу</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reviews-section reveal" id="reviews" aria-labelledby="reviews-title">
+          <div class="section-head">
+            <p class="eyebrow">Instagram Stories стилі</p>
+            <h2 id="reviews-title">Пікірлер</h2>
+          </div>
+          <div class="stories-track" id="reviewsTrack"></div>
+        </section>
+
+        <section class="section gallery-section reveal" aria-labelledby="gallery-title">
+          <div class="section-head">
+            <p class="eyebrow">Біздің жұмыстар</p>
+            <h2 id="gallery-title">Тәтті галерея</h2>
+          </div>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <img src="./logo/466951488_465452966084623_3726361205865754691_n.jpg" alt="Zuhra Cakes logo" />
+          <strong>Zuhra Cakes</strong>
+          <span>Торттар · панкейктер · тәттілер</span>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#menu">Мәзір</a>
+          <a href="#builder">Торт конструкторы</a>
+          <a href="#locations">Мекенжайлар</a>
+          <a href="https://www.instagram.com/zuhra.cakes.kzo" target="_blank" rel="noreferrer">Instagram</a>
+        </nav>
+        <a class="footer-whatsapp" href="https://wa.me/77789599390" target="_blank" rel="noreferrer">
+          +7 778 959 93 90
+        </a>
+      </footer>
+    </div>
+
+    <button class="floating-whatsapp" type="button" data-floating-whatsapp aria-label="WhatsApp арқылы тапсырыс беру">
+      <span class="cupcake" aria-hidden="true">🧁</span>
+      <span>Тәтті тапсырыс</span>
+    </button>
+
+    <div class="drawer-backdrop" data-cart-backdrop></div>
+    <aside class="cart-drawer" aria-label="Тапсырыс себеті" aria-hidden="true" data-cart-drawer>
+      <div class="drawer-handle"></div>
+      <div class="drawer-head">
+        <div>
+          <span class="eyebrow">Zuhra Cakes</span>
+          <h2>Тапсырыс</h2>
+        </div>
+        <button class="icon-button" type="button" data-close-cart aria-label="Жабу">×</button>
+      </div>
+      <div class="cart-empty" data-cart-empty>
+        <strong>Себет бос</strong>
+        <span>Алдымен тәтті таңдаңыз</span>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total" data-cart-total></div>
+      <form class="order-form" data-order-form novalidate>
+        <label>
+          <span>Атыңыз</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Мысалы, Айдана" />
+        </label>
+        <label>
+          <span>Телефон нөміріңіз</span>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="+7 ..." />
+        </label>
+        <label>
+          <span>Мекенжай/алу орны</span>
+          <select name="address">
+            <option>Панфилова 26</option>
+            <option>Есім хан 15A</option>
+            <option>Жеткізу керек</option>
+          </select>
+        </label>
+        <label>
+          <span>Пікір / қалауыңыз</span>
+          <textarea name="comment" rows="3" placeholder="Дәмі, уақыты, жазуы..."></textarea>
+        </label>
+        <p class="form-warning" data-form-warning></p>
+        <button class="btn btn-primary full" type="submit">WhatsApp-қа жіберу</button>
+      </form>
+    </aside>
+
+    <div class="lightbox" data-lightbox aria-hidden="true">
+      <button class="icon-button" type="button" data-lightbox-close aria-label="Жабу">×</button>
+      <img alt="" data-lightbox-image />
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
